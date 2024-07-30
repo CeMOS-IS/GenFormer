@@ -1,0 +1,59 @@
+SEED:
+  DETERMINISTIC: False
+  SEED: 42
+
+EXPERIMENT:
+  NAME: DeiT
+  PROJECT: mix_genformer
+  TAG: DeiT,Tiny ImageNet,Mix,GenFormer
+
+DATASET:
+  IMG_SIZE: 224
+  TYPE:
+    TRAIN: tinyimagenet
+    TEST: tinyimagenet-c
+  TRAIN_SUBSET: tiny-imagenet-200  # [tinyimagenet-r, tinyimagenet-v2, tinyimagenet-a]
+  SYNTHETIC_DATA: True
+  BATCH_SIZE:
+    TRAIN: 128
+    TEST: 128
+  NUM_WORKERS: 16
+  AUGMENTATION:
+    TT_BENCHMARK: True
+    MIXUP: True
+    CUTMIX: True
+
+SYNTHETIC_DATA:
+  DIR_NAME: tinyimagenetplus
+  PERCENT: 1.0
+
+MODEL: 
+  TYPE: deit
+  TRANSFORMER:
+    PATCH_SIZE: 16
+    HIDDEN_DIM: 192
+    DEPTH: 12
+    NUM_HEADS: 3
+    MLP_RATIO: 4
+    LN_EPS: 1e-6
+    DROP_RATE: 0.0
+    DROP_PATH_RATE: 0.1
+    ATTENTION_DROP_RATE: 0.0
+  DEIT:
+    ENABLE_LOGIT: False
+
+SOLVER:
+  TYPE: AdamW
+  TRAINER: base
+  EPOCHS: 300
+  LR_TYPE: warmup_cosine
+  BASE_LR: 5.0e-4
+
+ADAMW:
+  BETAS: [0.9, 0.999]
+  WEIGHT_DECAY: 0.05
+
+WARMUP_COSINE:
+  START_LR:  5.0e-7
+  MIN_LR: 5.0e-6
+  WARMUP_EPOCHS: 20

@@ -1,0 +1,141 @@
+{
+    "CE_gaussian_noise": {
+        "severity 1": 20.260000000000005,
+        "severity 2": 26.239999999999995,
+        "severity 3": 32.540000000000006,
+        "severity 4": 36.55,
+        "severity 5": 40.85,
+        "sum": 156.44,
+        "abs": 31.288
+    },
+    "CE_shot_noise": {
+        "severity 1": 18.939999999999998,
+        "severity 2": 20.78,
+        "severity 3": 28.150000000000006,
+        "severity 4": 31.900000000000006,
+        "severity 5": 37.55,
+        "sum": 137.32,
+        "abs": 27.464
+    },
+    "CE_impulse_noise": {
+        "severity 1": 22.430000000000007,
+        "severity 2": 28.799999999999997,
+        "severity 3": 36.41,
+        "severity 4": 50.09,
+        "severity 5": 59.98,
+        "sum": 197.71,
+        "abs": 39.542
+    },
+    "CE_defocus_blur": {
+        "severity 1": 17.209999999999994,
+        "severity 2": 17.480000000000004,
+        "severity 3": 18.319999999999993,
+        "severity 4": 19.67,
+        "severity 5": 22.83,
+        "sum": 95.50999999999999,
+        "abs": 19.101999999999997
+    },
+    "CE_glass_blur": {
+        "severity 1": 28.67,
+        "severity 2": 27.900000000000006,
+        "severity 3": 26.560000000000002,
+        "severity 4": 37.02,
+        "severity 5": 34.92,
+        "sum": 155.07,
+        "abs": 31.014
+    },
+    "CE_motion_blur": {
+        "severity 1": 18.709999999999994,
+        "severity 2": 21.060000000000002,
+        "severity 3": 24.129999999999995,
+        "severity 4": 24.620000000000005,
+        "severity 5": 27.92,
+        "sum": 116.44,
+        "abs": 23.288
+    },
+    "CE_zoom_blur": {
+        "severity 1": 18.310000000000002,
+        "severity 2": 17.930000000000007,
+        "severity 3": 18.310000000000002,
+        "severity 4": 18.629999999999995,
+        "severity 5": 19.67,
+        "sum": 92.85000000000001,
+        "abs": 18.57
+    },
+    "CE_snow": {
+        "severity 1": 20.480000000000004,
+        "severity 2": 25.909999999999997,
+        "severity 3": 27.480000000000004,
+        "severity 4": 29.519999999999996,
+        "severity 5": 29.019999999999996,
+        "sum": 132.41,
+        "abs": 26.482
+    },
+    "CE_frost": {
+        "severity 1": 18.909999999999997,
+        "severity 2": 21.540000000000006,
+        "severity 3": 25.549999999999997,
+        "severity 4": 26.090000000000003,
+        "severity 5": 30.75,
+        "sum": 122.84,
+        "abs": 24.568
+    },
+    "CE_fog": {
+        "severity 1": 17.61,
+        "severity 2": 19.28,
+        "severity 3": 21.5,
+        "severity 4": 25.510000000000005,
+        "severity 5": 37.85,
+        "sum": 121.75,
+        "abs": 24.35
+    },
+    "CE_brightness": {
+        "severity 1": 17.03,
+        "severity 2": 17.430000000000007,
+        "severity 3": 17.989999999999995,
+        "severity 4": 18.519999999999996,
+        "severity 5": 20.519999999999996,
+        "sum": 91.49,
+        "abs": 18.298
+    },
+    "CE_contrast": {
+        "severity 1": 18.150000000000006,
+        "severity 2": 22.689999999999998,
+        "severity 3": 26.379999999999995,
+        "severity 4": 31.120000000000005,
+        "severity 5": 46.13,
+        "sum": 144.47,
+        "abs": 28.894
+    },
+    "CE_elastic_transform": {
+        "severity 1": 19.78,
+        "severity 2": 19.14,
+        "severity 3": 20.019999999999996,
+        "severity 4": 21.97,
+        "severity 5": 25.480000000000004,
+        "sum": 106.39,
+        "abs": 21.278
+    },
+    "CE_pixelate": {
+        "severity 1": 17.700000000000003,
+        "severity 2": 18.939999999999998,
+        "severity 3": 19.159999999999997,
+        "severity 4": 19.900000000000006,
+        "severity 5": 33.239999999999995,
+        "sum": 108.94,
+        "abs": 21.788
+    },
+    "CE_jpeg_compression": {
+        "severity 1": 19.620000000000005,
+        "severity 2": 20.909999999999997,
+        "severity 3": 21.439999999999998,
+        "severity 4": 22.14,
+        "severity 5": 22.959999999999994,
+        "sum": 107.07,
+        "abs": 21.413999999999998
+    },
+    "CE_clean": 16.97,
+    "mCE": {
+        "abs": 25.156000000000002
+    }
+}

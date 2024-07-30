@@ -1,0 +1,10 @@
+cmake
+onnx
+timm
+einops
+yacs==0.1.8
+wandb
+tqdm
+tk
+medmnist
+opencv-python

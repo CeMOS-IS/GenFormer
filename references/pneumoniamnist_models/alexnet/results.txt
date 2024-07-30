@@ -1,0 +1,173 @@
+{
+    "CE_gaussian_noise": {
+        "severity 1": 55.34,
+        "severity 2": 68.88,
+        "severity 3": 79.08,
+        "severity 4": 82.34,
+        "severity 5": 85.72,
+        "sum": 371.36,
+        "abs": 74.272,
+        "rel": 100.0,
+        "Relative CE": 100.0
+    },
+    "CE_shot_noise": {
+        "severity 1": 49.16,
+        "severity 2": 57.23,
+        "severity 3": 72.89,
+        "severity 4": 77.72,
+        "severity 5": 83.93,
+        "sum": 340.93,
+        "abs": 68.186,
+        "rel": 100.0,
+        "Relative CE": 100.0
+    },
+    "CE_impulse_noise": {
+        "severity 1": 67.38,
+        "severity 2": 80.76,
+        "severity 3": 87.06,
+        "severity 4": 92.81,
+        "severity 5": 95.02,
+        "sum": 423.03,
+        "abs": 84.606,
+        "rel": 100.0,
+        "Relative CE": 100.0
+    },
+    "CE_defocus_blur": {
+        "severity 1": 42.7,
+        "severity 2": 45.57,
+        "severity 3": 50.27,
+        "severity 4": 55.31,
+        "severity 5": 65.03,
+        "sum": 258.88,
+        "abs": 51.775999999999996,
+        "rel": 100.0,
+        "Relative CE": 100.0
+    },
+    "CE_glass_blur": {
+        "severity 1": 72.49,
+        "severity 2": 71.35,
+        "severity 3": 65.25,
+        "severity 4": 79.35,
+        "severity 5": 74.48,
+        "sum": 362.91999999999996,
+        "abs": 72.58399999999999,
+        "rel": 100.0,
+        "Relative CE": 100.0
+    },
+    "CE_motion_blur": {
+        "severity 1": 47.32,
+        "severity 2": 53.12,
+        "severity 3": 59.01,
+        "severity 4": 58.6,
+        "severity 5": 63.47,
+        "sum": 281.52,
+        "abs": 56.303999999999995,
+        "rel": 100.0,
+        "Relative CE": 100.0
+    },
+    "CE_zoom_blur": {
+        "severity 1": 49.6,
+        "severity 2": 51.65,
+        "severity 3": 54.32,
+        "severity 4": 56.66,
+        "severity 5": 60.52,
+        "sum": 272.75,
+        "abs": 54.55,
+        "rel": 100.0,
+        "Relative CE": 100.0
+    },
+    "CE_snow": {
+        "severity 1": 49.94,
+        "severity 2": 59.22,
+        "severity 3": 58.9,
+        "severity 4": 60.19,
+        "severity 5": 64.58,
+        "sum": 292.83,
+        "abs": 58.565999999999995,
+        "rel": 100.0,
+        "Relative CE": 100.0
+    },
+    "CE_frost": {
+        "severity 1": 47.26,
+        "severity 2": 54.29,
+        "severity 3": 63.08,
+        "severity 4": 63.52,
+        "severity 5": 70.91,
+        "sum": 299.06,
+        "abs": 59.812,
+        "rel": 100.0,
+        "Relative CE": 100.0
+    },
+    "CE_fog": {
+        "severity 1": 43.88,
+        "severity 2": 51.07,
+        "severity 3": 58.3,
+        "severity 4": 66.28,
+        "severity 5": 80.96000000000001,
+        "sum": 300.49,
+        "abs": 60.098,
+        "rel": 100.0,
+        "Relative CE": 100.0
+    },
+    "CE_brightness": {
+        "severity 1": 42.38,
+        "severity 2": 43.85,
+        "severity 3": 46.08,
+        "severity 4": 49.44,
+        "severity 5": 57.16,
+        "sum": 238.91,
+        "abs": 47.782,
+        "rel": 100.0,
+        "Relative CE": 100.0
+    },
+    "CE_contrast": {
+        "severity 1": 45.6,
+        "severity 2": 59.65,
+        "severity 3": 69.83,
+        "severity 4": 81.42,
+        "severity 5": 94.66,
+        "sum": 351.15999999999997,
+        "abs": 70.232,
+        "rel": 100.0,
+        "Relative CE": 100.0
+    },
+    "CE_elastic_transform": {
+        "severity 1": 48.81,
+        "severity 2": 48.31,
+        "severity 3": 51.64,
+        "severity 4": 52.55,
+        "severity 5": 54.63,
+        "sum": 255.94,
+        "abs": 51.188,
+        "rel": 100.0,
+        "Relative CE": 100.0
+    },
+    "CE_pixelate": {
+        "severity 1": 43.78,
+        "severity 2": 45.28,
+        "severity 3": 45.4,
+        "severity 4": 46.24,
+        "severity 5": 57.46,
+        "sum": 238.16000000000003,
+        "abs": 47.632000000000005,
+        "rel": 100.0,
+        "Relative CE": 100.0
+    },
+    "CE_jpeg_compression": {
+        "severity 1": 47.99,
+        "severity 2": 50.7,
+        "severity 3": 51.73,
+        "severity 4": 52.47,
+        "severity 5": 53.8,
+        "sum": 256.69,
+        "abs": 51.338,
+        "rel": 100.0,
+        "Relative CE": 100.0
+    },
+    "CE_clean": 41.83,
+    "mCE": {
+        "abs": 60.59506666666666,
+        "rel": 100.0
+    },
+    "Relative mCE": 100.0
+}

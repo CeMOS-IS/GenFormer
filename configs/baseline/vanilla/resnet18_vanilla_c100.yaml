@@ -1,0 +1,43 @@
+SEED:
+  DETERMINISTIC: False
+  SEED: 42
+
+EXPERIMENT:
+  NAME: ResNet-18
+  PROJECT: vanilla
+  TAG: ResNet-18,CIFAR-100,Vanilla
+
+DATASET:
+  IMG_SIZE: 224
+  TYPE:
+    TRAIN: cifar100
+    TEST: cifar100-c
+  BATCH_SIZE:
+    TRAIN: 128
+    TEST: 128
+  NUM_WORKERS: 16
+  AUGMENTATION:
+    TT_BENCHMARK: True
+
+MODEL:
+  TYPE: ResNetv2TT
+  CNN:
+    DEPTH: 18
+  RESNET:
+    TRANS_FUN: basic_transform
+
+SOLVER:
+  TYPE: SGD
+  TRAINER: base
+  EPOCHS: 300
+  LR_TYPE: cosine
+  BASE_LR: 0.1
+
+SGD:
+  MOMENTUM: 0.9
+  NESTEROV: True
+  WEIGHT_DECAY: 5e-4
+
+COSINE:
+  MIN_LR: 0.0
+
