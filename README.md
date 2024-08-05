@@ -72,34 +72,34 @@ docker run -it --name genformer --rm \
 
 | Method  | Train-Strategy | Gen. Images | T-IN Err. | T-INv2 Err. | T-IN-R-Err. | T-IN-C CE | T-IN-A Err. | model |
 |---------|----------------|-------------|-----------|-------------|-------------|-----------|-------------|-------|
-| DeiT-Ti | Baseline       | False       | 50.3      | 68.0        | 92.5        | 80.6      | 80.6        | [model]() | j
-| DeiT-Ti | Baseline       | True        | 44.1      | 65.3        | 89.6        | 77.7      | 78.0        | [model]() | j
-| DeiT-Ti | Cutmix + MixUp | False       | 44.4      | 65.0        | 89.7        | 74.5      | 78.3        | [model]() | j
-| DeiT-Ti | Cutmix + MixUp | True        | 38.5      | 57.8        | 86.4        | 71.8      | 74.4        | [model]() |
-| DeiT-Ti | AugMix         | False       | 40.4      | 61.3        | 88.4        | 72.8      | 76.2        | [model]() | j
-| DeiT-Ti | AugMix         | True        | 36.4      | 57.8        | 85.6        | 71.0      | 73.1        | [model]() |
-| PVT-T   | Baseline       | False       | 46.5      | 67.2        | 91.5        | 78.9      | 78.9        | [model]() |
-| PVT-T   | Baseline       | True        | 42.8      | 64.8        | 87.4        | 76.8      | 77.7        | [model]() |
-| PVT-T   | Cutmix + MixUp | False       | 41.9      | 64.6        | 87.8        | 74.1      | 76.8        | [model]() |
-| PVT-T   | Cutmix + MixUp | True        | 37.5      | 60.1        | 84.6        | 70.1      | 74.1        | [model]() |
-| PVT-T   | AugMix         | False       | 39.9      | 62.1        | 87.9        | 73.0      | 75.9        | [model]() |
-| PVT-T   | AugMix         | True        | 36.4      | 58.3        | 86.2        | 71.0      | 73.6        | [model]() |
+| DeiT-Ti | Baseline       | False       | 50.3      | 68.0        | 92.5        | 80.6      | 80.6        | [model](https://clousi.hs-mannheim.de/index.php/s/sXJaGN23ReXxtWa) | 
+| DeiT-Ti | Baseline       | True        | 44.1      | 65.3        | 89.6        | 77.7      | 78.0        | [model](https://clousi.hs-mannheim.de/index.php/s/8bgjArTg44gRTc3) | 
+| DeiT-Ti | Cutmix + MixUp | False       | 44.4      | 65.0        | 89.7        | 74.5      | 78.3        | [model](https://clousi.hs-mannheim.de/index.php/s/zdfAx7xmPSm8S6a) | 
+| DeiT-Ti | Cutmix + MixUp | True        | 38.5      | 57.8        | 86.4        | 71.8      | 74.4        | [model](https://clousi.hs-mannheim.de/index.php/s/c5L5YWatRgiS6S3) | 
+| DeiT-Ti | AugMix         | False       | 40.4      | 61.3        | 88.4        | 72.8      | 76.2        | [model](https://clousi.hs-mannheim.de/index.php/f/9434031) | 
+| DeiT-Ti | AugMix         | True        | 36.4      | 57.8        | 85.6        | 71.0      | 73.1        | [model](https://clousi.hs-mannheim.de/index.php/s/dRwpRxxXctyxf3M) | 
+| PVT-T   | Baseline       | False       | 46.5      | 67.2        | 91.5        | 78.9      | 78.9        | [model](https://clousi.hs-mannheim.de/index.php/f/9434050) | 
+| PVT-T   | Baseline       | True        | 42.8      | 64.8        | 87.4        | 76.8      | 77.7        | [model](https://clousi.hs-mannheim.de/index.php/s/7KyeQticxr6BYJF) | 
+| PVT-T   | Cutmix + MixUp | False       | 41.9      | 64.6        | 87.8        | 74.1      | 76.8        | [model](https://clousi.hs-mannheim.de/index.php/s/CTCZar6CPbdaNcP) | 
+| PVT-T   | Cutmix + MixUp | True        | 37.5      | 60.1        | 84.6        | 70.1      | 74.1        | [model](https://clousi.hs-mannheim.de/index.php/s/SaZyR8w5FEaiPSo) |
+| PVT-T   | AugMix         | False       | 39.9      | 62.1        | 87.9        | 73.0      | 75.9        | [model](https://clousi.hs-mannheim.de/index.php/s/259pceXnQbCm3jL) |
+| PVT-T   | AugMix         | True        | 36.4      | 58.3        | 86.2        | 71.0      | 73.6        | [model](https://clousi.hs-mannheim.de/index.php/s/mZyjkPsfMZKpSc9) |
 </details>
 
 <details><summary>Results and Models on CIFAR-10 / CIFAR-100</summary>
 
 | Method   | Gen. Images | C-10 Err. | C-10.1 Err. | C-10-C CE | C-100-C Err | C-100-C CE | model                  |
 |----------|-------------|---------------|-----------------|---------------|-----------------|----------------|------------------------|
-| ResNet18 | False       | 4.6  j         | 11.2            | 15.1          | 20.5   j         | 37.9           | [model-C10]() / [model-C100]() |
-| ResNet18 | True        | 4.1           | 10.1            | 14.6          | 20.3   j         | 38.0           | [model-C10]() / [model-C100]() |
-| DeiT-Ti  | False       | 10.5  j        | 22.2            | 23.0          | 35.3  j          | 51.8           | [model-C10]() / [model-C100]() |
-| DeiT-Ti  | True        | 4.0           | 9.8             | 12.0          | 24.7  j          | 39.4           | [model-C10]() / [model-C100]() |
-| PVT-T    | False       | 6.9   j        | 14.8            | 17.8          | 29.7   j         | 48.0           | [model-C10]() / [model-C100]() |
-| PVT-T    | True        | 3.6           | 9.7             | 11.7          | 21.1            | 35.9           | [model-C10]() / [model-C100]() |
-| PVTv2-B0 | False       | 5.0  j         | 11.1            | 14.2          | 23.1   j         | 41.2           | [model-C10]() / [model-C100]() |
-| PVTv2-B0 | True        | 3.5           | 8.8             | 12.6          | 19.5            | 34.2           | [model-C10]() / [model-C100]() |
-| ConViT   | False       | 5.6  j         | 13.2            | 14.0          | 25.5   j         | 40.6           | [model-C10]() / [model-C100]() |
-| ConViT   | True        | 3.2           | 7.8             | 9.6           | 18.2            | 31.5           | [model-C10]() / [model-C100]() |
+| ResNet18 | False       | 4.6           | 11.2            | 15.1          | 20.5            | 37.9           | [model-C10](https://clousi.hs-mannheim.de/index.php/s/b4Dkyt73Ze8eiy3) / [model-C100](https://clousi.hs-mannheim.de/index.php/s/EAfPCCPCETPYfyg) |
+| ResNet18 | True        | 4.1           | 10.1            | 14.6          | 20.3            | 38.0           | [model-C10](https://clousi.hs-mannheim.de/index.php/s/ETi3mepijoiKEkg) / [model-C100](https://clousi.hs-mannheim.de/index.php/s/Sdao9bLpYfzy7Hn) |
+| DeiT-Ti  | False       | 10.5          | 22.2            | 23.0          | 35.3            | 51.8           | [model-C10](https://clousi.hs-mannheim.de/index.php/s/b4Dkyt73Ze8eiy3) / [model-C100](https://clousi.hs-mannheim.de/index.php/s/GnrB3TEPc5aMdYC) |
+| DeiT-Ti  | True        | 4.0           | 9.8             | 12.0          | 24.7            | 39.4           | [model-C10]() / [model-C100](https://clousi.hs-mannheim.de/index.php/s/7RQHGKKrPWM9xai) |
+| PVT-T    | False       | 6.9           | 14.8            | 17.8          | 29.7            | 48.0           | [model-C10](https://clousi.hs-mannheim.de/index.php/s/7cKXHJYBRSGMmcQ) / [model-C100](https://clousi.hs-mannheim.de/index.php/s/EDSb58gCdY8iP5e) |
+| PVT-T    | True        | 3.6           | 9.7             | 11.7          | 21.1            | 35.9           | [model-C10](https://clousi.hs-mannheim.de/index.php/s/MHEfoMipP4jXFXF) / [model-C100](https://clousi.hs-mannheim.de/index.php/s/eX4Dtrmwtderz4X) |
+| PVTv2-B0 | False       | 5.0           | 11.1            | 14.2          | 23.1            | 41.2           | [model-C10](https://clousi.hs-mannheim.de/index.php/s/96ZGzNJ7W4McDoX) / [model-C100](https://clousi.hs-mannheim.de/index.php/s/oLxqz8CY9DxAyyz) |
+| PVTv2-B0 | True        | 3.5           | 8.8             | 12.6          | 19.5            | 34.2           | [model-C10](https://clousi.hs-mannheim.de/index.php/s/DqMe9ci4ptz2mzp) / [model-C100](https://clousi.hs-mannheim.de/index.php/s/kHi6pbK3SqeeYFj) |
+| ConViT   | False       | 5.6           | 13.2            | 14.0          | 25.5            | 40.6           | [model-C10](https://clousi.hs-mannheim.de/index.php/s/ysHZT7SM7tBdoxn) / [model-C100](https://clousi.hs-mannheim.de/index.php/s/dFcdSm9Hn5c4kwt) |
+| ConViT   | True        | 3.2           | 7.8             | 9.6           | 18.2            | 31.5           | [model-C10](https://clousi.hs-mannheim.de/index.php/s/qtrwGeTFk7nkKkQ) / [model-C100](https://clousi.hs-mannheim.de/index.php/s/6sn3XMAd6izeFB3) |
 
 </details>
 
@@ -107,10 +107,10 @@ docker run -it --name genformer --rm \
 
 | Method   | Gen. Images | B-MNIST Err.  | B-MNIST-C CE    | P-MNIST Err.  | P-MNIST-C CE    | OS-MNIST Err.  |OS-MNIST-C CE   | model                  |
 |----------|-------------|---------------|-----------------|---------------|-----------------|----------------|----------------|------------------------|
-| DeiT-Ti  | False       | 23.1          | 24.5            | 8.0           | 12.8            | 26.9           | 45.9           | [model-B]() / [model-P]() / [model-OS]() |
-| DeiT-Ti  | True        | 9.0           | 14.7            | 5.1           | 10.5            | 21.3           | 32.5           | [model-B]() / [model-P]() / [model-OS]() |
-| PVT-T    | False       | 22.4          | 23.9            | 13.1          | 17.8            | 20.3           | 34.4           | [model-B]() / [model-P]() / [model-OS]() |
-| PVT-T    | True        | 9.0           | 13.9            | 5.4           | 10.0            | 17.1           | 24.7           | [model-B]() / [model-P]() / [model-OS]() |
+| DeiT-Ti  | False       | 23.1          | 24.5            | 8.0           | 12.8            | 26.9           | 45.9           | [model-B](https://clousi.hs-mannheim.de/index.php/s/ZdsY75S268KEpo2) / [model-P](https://clousi.hs-mannheim.de/index.php/s/G3JgrGq6b8WJWoN) / [model-OS](https://clousi.hs-mannheim.de/index.php/s/gpJ35jFBHz6PqgX) |
+| DeiT-Ti  | True        | 9.0           | 14.7            | 5.1           | 10.5            | 21.3           | 32.5           | [model-B](https://clousi.hs-mannheim.de/index.php/s/idHsZiq6b8YNrro) / [model-P](https://clousi.hs-mannheim.de/index.php/s/JSnYbJnP2pSHe7g) / [model-OS](https://clousi.hs-mannheim.de/index.php/s/xwEZJidkDYY4xaf) |
+| PVT-T    | False       | 22.4          | 23.9            | 13.1          | 17.8            | 20.3           | 34.4           | [model-B](https://clousi.hs-mannheim.de/index.php/s/DFWHwkBprWyJZXK) / [model-P](https://clousi.hs-mannheim.de/index.php/s/abMDmLSE4a7g6pE) / [model-OS]() |
+| PVT-T    | True        | 9.0           | 13.9            | 5.4           | 10.0            | 17.1           | 24.7           | [model-B](https://clousi.hs-mannheim.de/index.php/s/Ebt3ceREJpHEs8Z) / [model-P]() / [model-OS](https://clousi.hs-mannheim.de/index.php/s/K3HGcadtdsQwaP3) |
 </details>
 
 ## Data preparation
