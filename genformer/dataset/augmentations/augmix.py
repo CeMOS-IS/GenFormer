@@ -55,13 +55,13 @@ class AugMixDataset(Dataset):
     self.severity_teacher = sev_scheduler(cfg, epoch=0)
 
   def __getitem__(self, i):
-    x, y, index = self.dataset[i]
+    x, y = self.dataset[i]
     if self.cfg.AUGMIX.JSD:
       im_tuple = (self.preprocess(x), aug(x, self.preprocess, self.cfg, self.severity_student),
                   aug(x, self.preprocess, self.cfg, self.severity_student))
-      return im_tuple, y, index
+      return im_tuple, y
     else:
-      return aug(x, self.preprocess, self.cfg, self.severity_student), y, index
+      return aug(x, self.preprocess, self.cfg, self.severity_student), y
 
   def __len__(self):
     return len(self.dataset)

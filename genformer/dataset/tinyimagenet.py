@@ -17,7 +17,8 @@ def get_tinyimagenet_dataset(cfg):
         split='test', transform=test_transform, download=True, root=base_folder
     )
     num_data = len(train_set)
-    
+    train_set.labels = train_set.labels.flatten()
+    test_set.labels = test_set.labels.flatten()
     return train_set, test_set, num_data
 
 
@@ -38,7 +39,7 @@ def get_tinyimagenet_test_dataset(cfg):
             split='test', transform=test_transform, download=True, root=base_folder
         )
     num_data = len(test_set)
-    
+    test_set.labels = test_set.labels.flatten()
     return test_set, num_data
 
 
@@ -50,7 +51,7 @@ def get_tinyimagenet_c_dataset(cfg):
         split='test', transform=test_transform, download=True, root=base_folder
     )
     num_data = len(test_set)
-    
+    test_set.labels = test_set.labels.flatten()
     return _, test_set, num_data
 
 
