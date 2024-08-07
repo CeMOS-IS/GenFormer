@@ -21,7 +21,7 @@ DATASET:
     TT_BENCHMARK: True
 
 SYNTHETIC_DATA:
-  DIR_NAME: tinyimagenetplus
+  DIR_NAME: organsmnistplus
   PERCENT: 1.0
 
 MODEL:
