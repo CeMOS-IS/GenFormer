@@ -1,5 +1,5 @@
 # GenFormer - Generated Images are All You Need to Improve Robustness of Transformers on Small Datasets
-[![arxiv.org](https://img.shields.io/badge/cs.CV-arXiv%3A0000.0000-B31B1B.svg)](https://arxiv.org/)
+[![arxiv.org](https://img.shields.io/badge/cs.CV-arXiv%3A2408.14131-B31B1B.svg)](http://arxiv.org/abs/2408.14131)
 [![cite-bibtex](https://img.shields.io/badge/Cite-BibTeX-1f425f.svg)](#citing) \
 Official repository of the ICPR24 paper "GenFormer - Generated Images are All You Need to Improve Robustness of Transformers on Small Datasets" 
 
@@ -37,7 +37,7 @@ The code was tested with CUDA 11.8, Python 3.10 PyTorch 2.2.0. The code was not 
 
 ```
 git clone https://github.com/CeMOS-IS/GenFormer
-cd genformer
+cd GenFormer
 ```
 
 ### Conda
@@ -107,7 +107,7 @@ docker run -it --name genformer --rm \
 
 | Method   | Gen. Images | B-MNIST Err.  | B-MNIST-C CE    | P-MNIST Err.  | P-MNIST-C CE    | OS-MNIST Err.  |OS-MNIST-C CE   | model                  |
 |----------|-------------|---------------|-----------------|---------------|-----------------|----------------|----------------|------------------------|
-| DeiT-Ti  | False       | 23.1          | 24.5            | 8.0           | 12.8            | 26.9           | 45.9           | [model-B](https://clousi.hs-mannheim.de/index.php/s/ZdsY75S268KEpo2) / [model-P](https://clousi.hs-mannheim.de/index.php/s/G3JgrGq6b8WJWoN) / [model-OS](https://clousi.hs-mannheim.de/index.php/s/gpJ35jFBHz6PqgX) |
+| DeiT-Ti  | False       | 23.1          | 24.5            | 8.0           | 12.8            | 26.9           | 45.9           | [model-B](https://clousi.hs-mannheim.de/index.php/s/Aq7zXRMe7Z4TdnS) / [model-P](https://clousi.hs-mannheim.de/index.php/s/Cm2NTrtenttXkoS) / [model-OS](https://clousi.hs-mannheim.de/index.php/s/j8okDab6tx3ZCoZ) |
 | DeiT-Ti  | True        | 9.0           | 14.7            | 5.1           | 10.5            | 21.3           | 32.5           | [model-B](https://clousi.hs-mannheim.de/index.php/s/idHsZiq6b8YNrro) / [model-P](https://clousi.hs-mannheim.de/index.php/s/JSnYbJnP2pSHe7g) / [model-OS](https://clousi.hs-mannheim.de/index.php/s/xwEZJidkDYY4xaf) |
 | PVT-T    | False       | 22.4          | 23.9            | 13.1          | 17.8            | 20.3           | 34.4           | [model-B](https://clousi.hs-mannheim.de/index.php/s/DFWHwkBprWyJZXK) / [model-P](https://clousi.hs-mannheim.de/index.php/s/abMDmLSE4a7g6pE) / [model-OS](https://clousi.hs-mannheim.de/index.php/s/Ktmfzj4JjLydJcZ) |
 | PVT-T    | True        | 9.0           | 13.9            | 5.4           | 10.0            | 17.1           | 24.7           | [model-B](https://clousi.hs-mannheim.de/index.php/s/Ebt3ceREJpHEs8Z) / [model-P](https://clousi.hs-mannheim.de/index.php/s/n4ZJq4wPwXnamSt) / [model-OS](https://clousi.hs-mannheim.de/index.php/s/X4ZdCZ7jHSxp9W6) |
