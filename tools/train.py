@@ -82,7 +82,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser("training for image classification.")
     parser.add_argument("--cfg", type=str, default="")
-    parser.add_argument("--resume", action="store_true")
+    parser.add_argument("--resume", type=str, default=None, help="path  to checkpoint-folder")
     parser.add_argument("opts", default=None, nargs=argparse.REMAINDER)
 
     args = parser.parse_args()

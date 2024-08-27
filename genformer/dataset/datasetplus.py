@@ -9,6 +9,7 @@ from torchvision.datasets import VisionDataset
 from timm.data import create_transform
 from PIL import Image
 
+from .utils import get_data_folder
 from .augmentations.autoaugment import CIFAR10Policy, ImageNetPolicy
 
 mean_std_dict = {
@@ -65,12 +66,6 @@ mean_std_dict = {
     "std"  : (0.2828,),
   },
 }
-
-def get_data_folder():
-    data_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../data")
-    if not os.path.isdir(data_folder):
-        os.makedirs(data_folder)
-    return data_folder
 
 
 class DatasetPlusInstance(VisionDataset):

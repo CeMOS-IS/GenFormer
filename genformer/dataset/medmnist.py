@@ -6,6 +6,7 @@ from timm.data import create_transform
 import medmnist
 from medmnist import INFO
 from robust_minisets import BloodMNISTC, BreastMNISTC, DermaMNISTC, OCTMNISTC, OrganAMNISTC, OrganCMNISTC, OrganSMNISTC, PathMNISTC, PneumoniaMNISTC, TissueMNISTC
+from .utils import get_data_folder
 
 def get_medmnist_dataset(cfg):
     base_folder = get_data_folder()
@@ -29,6 +30,7 @@ def get_medmnist_dataset(cfg):
     return train_set, test_set, num_data, num_classes, in_channels
 
 
+
 def get_medmnist_c_dataset(cfg):
     base_folder = get_data_folder()
     info = INFO[cfg.DATASET.TYPE.TRAIN]
@@ -41,13 +43,6 @@ def get_medmnist_c_dataset(cfg):
     num_data = len(test_set)
     
     return _, test_set, num_data
-
-
-def get_data_folder():
-    data_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../data")
-    if not os.path.isdir(data_folder):
-        os.makedirs(data_folder)
-    return data_folder
 
 def normal2instance(DataClass):
     class MedMNISTInstance(DataClass):

@@ -139,14 +139,14 @@ class BaseTrainer(object):
 
     def train(self, resume=False):
         epoch = 1
-        if resume:
-            state = load_checkpoint(os.path.join(self.log_path, "latest"))
+        self.model = self.model.cuda()
+        if not resume is None:
+            state = load_checkpoint(os.path.join(resume, "latest"))
             epoch = state["epoch"] + 1
             self.model.load_state_dict(state["model"])
             self.optimizer.load_state_dict(state["optimizer"])
             self.best_acc = state["best_acc"]
         
-        self.model = self.model.cuda()
         while epoch < self.cfg.SOLVER.EPOCHS + 1:
             self.train_epoch(epoch)
             epoch += 1

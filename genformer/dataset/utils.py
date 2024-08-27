@@ -1,3 +1,4 @@
+import os
 import random
 import numpy as np
 import torch
@@ -8,6 +9,14 @@ def seed_worker(worker_id):
     worker_seed = torch.initial_seed() % 2**32
     np.random.seed(worker_seed)
     random.seed(worker_seed)
+
+
+def get_data_folder():
+    this_dir = os.path.dirname(os.path.abspath(__file__))
+    two_down = os.path.dirname(os.path.dirname(this_dir))
+    data_folder = os.path.join(two_down, "data")
+    os.makedirs(data_folder, exist_ok=True)
+    return data_folder
     
     
 def sev_scheduler(cfg, epoch):

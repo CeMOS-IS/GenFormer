@@ -5,6 +5,7 @@ from timm.data import create_transform
 
 from robust_minisets import TinyImageNet, TinyImageNetC, TinyImageNetA, TinyImageNetR, TinyImageNetv2
 from .augmentations.autoaugment import ImageNetPolicy
+from .utils import get_data_folder
 
 
 def get_tinyimagenet_dataset(cfg):
@@ -53,13 +54,6 @@ def get_tinyimagenet_c_dataset(cfg):
     num_data = len(test_set)
     test_set.labels = test_set.labels.flatten()
     return _, test_set, num_data
-
-
-def get_data_folder():
-    data_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../data")
-    if not os.path.isdir(data_folder):
-        os.makedirs(data_folder)
-    return data_folder
 
 def get_tinyimagenet_transform(cfg):
     if cfg.DATASET.IN_NORMALIZATION:

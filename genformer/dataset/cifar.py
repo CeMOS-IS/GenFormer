@@ -5,6 +5,7 @@ from timm.data import create_transform
 
 from robust_minisets import CIFAR10C, CIFAR100C, CIFAR10_1
 from .augmentations.autoaugment import CIFAR10Policy
+from .utils import get_data_folder
 
 
 def get_cifar10_dataset(cfg):
@@ -74,13 +75,6 @@ def get_cifar100_c_dataset(cfg):
     num_data = len(test_set)
     
     return _, test_set, num_data
-
-
-def get_data_folder():
-    data_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../data")
-    if not os.path.isdir(data_folder):
-        os.makedirs(data_folder)
-    return data_folder
 
 
 def get_cifar_transform(cfg, mean, std):
