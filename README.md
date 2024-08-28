@@ -47,7 +47,7 @@ conda create -n genformer python=3.10
 conda activate genformer 
 pip install torch torchvision torchaudio
 pip install -r requirements.txt
-pip install -i https://test.pypi.org/simple/ robust-minisets
+pip install robust-minisets
 python3 setup.py develop
 ```
 
