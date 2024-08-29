@@ -24,6 +24,6 @@ COPY requirements.txt requirements.txt
 COPY setup.py setup.py
 
 RUN pip3 install -r requirements.txt
-RUN pip3 install -i https://test.pypi.org/simple/ robust-minisets
+RUN pip3 install robust-minisets
 
 RUN python3 setup.py develop --user

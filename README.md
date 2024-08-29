@@ -3,7 +3,7 @@
 [![cite-bibtex](https://img.shields.io/badge/Cite-BibTeX-1f425f.svg)](#citing) \
 Official repository of the ICPR24 paper "GenFormer - Generated Images are All You Need to Improve Robustness of Transformers on Small Datasets" 
 
-[Nikolas Ebert](https://scholar.google.de/citations?user=CfFwm1sAAAAJ&hl=de), Sven Oehri, Ahmed Abdullah, [Didier Stricker](https://scholar.google.de/citations?user=ImhXfxgAAAAJ&hl=de) & [Oliver Wasenmüller](https://scholar.google.de/citations?user=GkHxKY8AAAAJ&hl=de) \
+[Sven Oehri](https://scholar.google.de/citations?user=m4ydD_IAAAAJ), [Nikolas Ebert](https://scholar.google.de/citations?user=CfFwm1sAAAAJ&hl=de), Ahmed Abdullah, [Didier Stricker](https://scholar.google.de/citations?user=ImhXfxgAAAAJ&hl=de) & [Oliver Wasenmüller](https://scholar.google.de/citations?user=GkHxKY8AAAAJ&hl=de) \
 **[CeMOS - Research and Transfer Center](https://www.cemos.hs-mannheim.de/ "CeMOS - Research and Transfer Center"), [University of Applied Sciences Mannheim](https://www.english.hs-mannheim.de/the-university.html "University of Applied Sciences Mannheim")**
 
 
@@ -195,7 +195,7 @@ We utilized the code from [Elucidating the Design Space of Diffusion-Based Gener
 
 </details>
 
-<details><summary>Ariel Images</summary>
+<details><summary>Aerial Images</summary>
 
 - [EuroSAT](https://clousi.hs-mannheim.de/index.php/s/aJ6WcRZiKRKLxAG)
 
